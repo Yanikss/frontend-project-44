@@ -4,7 +4,7 @@ export const newQuestionWithAnswer = () => {
     const question = Math.floor(Math.random() * MAX);
     let correctAnswer = (question % 2 === 0) ? 'yes' : 'no'
 
-    return [question, correctAnswer];//['4+3', 7]
+    return [question, correctAnswer];
 }
 
 export const check = (correctAnswer, answer) => {
