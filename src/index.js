@@ -4,6 +4,7 @@ import { check as checkEven, newQuestionWithAnswer as newQuestionWithAnswerEven 
 import { check as checkCalc, newQuestionWithAnswer as newQuestionWithAnswerCalc } from './games/brain-calc.js';
 import { check as checkGcd, newQuestionWithAnswer as newQuestionWithAnswerGcd } from './games/brain-gcd.js';
 import { check as checkProgression, newQuestionWithAnswer as newQuestionWithAnswerProgression } from './games/brain-progression.js';
+import { check as checkPrime, newQuestionWithAnswer as newQuestionWithAnswerPrime } from './games/brain-prime.js';
 
 export const main = (gameName) => {
     console.log('Welcome to the Brain Games!');
@@ -17,6 +18,8 @@ export const main = (gameName) => {
         console.log('Find the greatest common divisor of given numbers.')
     } else if (gameName === 'progression') {
         console.log('What number is missing in the progression?')
+    } else if (gameName === 'prime') {
+        console.log('Answer "yes" if given number is prime. Otherwise answer "no".')
     }
 
 
@@ -32,6 +35,8 @@ export const main = (gameName) => {
             questionWithCorrectAnswer = newQuestionWithAnswerGcd();
         } else if (gameName === 'progression') {
             questionWithCorrectAnswer = newQuestionWithAnswerProgression();
+        } else if (gameName === 'prime') {
+            questionWithCorrectAnswer = newQuestionWithAnswerPrime();
         }
 
         const question = questionWithCorrectAnswer[0];
@@ -48,6 +53,8 @@ export const main = (gameName) => {
             isCorrect = checkGcd(correctAnswer, answer);
         } else if (gameName === 'progression') {
             isCorrect = checkProgression(correctAnswer, answer);
+        } else if (gameName === 'prime') {
+            isCorrect = checkPrime(correctAnswer, answer);
         }
 
         if (isCorrect) {
