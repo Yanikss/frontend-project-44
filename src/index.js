@@ -3,6 +3,7 @@ import { makeGreeting } from './cli.js';
 import { check as checkEven, newQuestionWithAnswer as newQuestionWithAnswerEven } from './games/brain-even.js';
 import { check as checkCalc, newQuestionWithAnswer as newQuestionWithAnswerCalc } from './games/brain-calc.js';
 import { check as checkGcd, newQuestionWithAnswer as newQuestionWithAnswerGcd } from './games/brain-gcd.js';
+import { check as checkProgression, newQuestionWithAnswer as newQuestionWithAnswerProgression } from './games/brain-progression.js';
 
 export const main = (gameName) => {
     console.log('Welcome to the Brain Games!');
@@ -14,6 +15,8 @@ export const main = (gameName) => {
         console.log('What is the result of the expression?')
     } else if (gameName === 'gcd') {
         console.log('Find the greatest common divisor of given numbers.')
+    } else if (gameName === 'progression') {
+        console.log('What number is missing in the progression?')
     }
 
 
@@ -27,6 +30,8 @@ export const main = (gameName) => {
             questionWithCorrectAnswer = newQuestionWithAnswerCalc();
         } else if (gameName === 'gcd') {
             questionWithCorrectAnswer = newQuestionWithAnswerGcd();
+        } else if (gameName === 'progression') {
+            questionWithCorrectAnswer = newQuestionWithAnswerProgression();
         }
 
         const question = questionWithCorrectAnswer[0];
@@ -41,6 +46,8 @@ export const main = (gameName) => {
             isCorrect = checkCalc(correctAnswer, answer);
         } else if (gameName === 'gcd') {
             isCorrect = checkGcd(correctAnswer, answer);
+        } else if (gameName === 'progression') {
+            isCorrect = checkProgression(correctAnswer, answer);
         }
 
         if (isCorrect) {
