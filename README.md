@@ -4,6 +4,13 @@
 <a href="https://codeclimate.com/github/Yanikss/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/7b4261e975533025d57c/maintainability" /></a>
 
 
+setup, publish and run :
+
+make install
+make publish
+npm link
+
+
 https://asciinema.org/a/okEOSPm9fXnanOZiOUFOTHMCq
 
 https://asciinema.org/a/b0kNCuENZNaQfQAa1iGmP2YgK
