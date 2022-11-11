@@ -3,6 +3,9 @@
 
 <a href="https://codeclimate.com/github/Yanikss/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/7b4261e975533025d57c/maintainability" /></a>
 
+"Игры разума" - набор из пяти консольных игр.
+
+
 Игра: "Проверка на чётность"
 Суть игры в следующем: пользователю показывается случайное число. И ему нужно ответить yes, если число чётное, или no — если нечётное:
 
