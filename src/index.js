@@ -41,7 +41,7 @@ export const main = (gameName) => {
 
         const question = questionWithCorrectAnswer[0];
         let correctAnswer = questionWithCorrectAnswer[1];
-        const answer = readlineSync.question(`Question : ${question}\nYour answer: `);
+        const answer = readlineSync.question(`Question: ${question}\nYour answer: `);
         
 
         let isCorrect;
