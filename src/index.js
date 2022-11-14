@@ -62,6 +62,8 @@ export const main = (gameName) => {
             console.log('Correct!')
         } else {
             console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'`)
+            console.log(`Let's try again, ${userName}!`)
+            break;
         }  
     } 
     if (countCorrectAnswers === 3) {
