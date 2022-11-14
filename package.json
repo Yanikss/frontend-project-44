@@ -5,10 +5,10 @@
   "main": "index.js",
   "type": "module",
   "bin": {
-    "brain-games": "brain-games.js",
-    "brain-even": "brain-even.js",
-    "brain-calc": "brain-calc.js",
-    "brain-gcd": "braing-gcd.js",
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js",
+    "brain-calc": "bin/brain-calc.js",
+    "brain-gcd": "bin/braing-gcd.js",
     "brain-progression": "brain-progression.js",
     "brain-prime": "brain-prime.js"
 
