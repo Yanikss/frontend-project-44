@@ -20,4 +20,6 @@ export const newQuestionWithAnswer = () => {
   return [question, correctAnswer];// ['4', 7]
 };
 
+export const nameDescription = 'Find the greatest common divisor of given numbers.';
+
 export const check = (correctAnswer, answer) => correctAnswer === +answer;

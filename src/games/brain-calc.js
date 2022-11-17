@@ -22,4 +22,6 @@ export const newQuestionWithAnswer = () => {
   return [question, correctAnswer]; // ['4+3', 7]
 };
 
+ export const nameDescription = 'What is the result of the expression?';
+
 export const check = (correctAnswer, answer) => correctAnswer === +answer;

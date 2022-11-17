@@ -17,4 +17,6 @@ export const newQuestionWithAnswer = () => {
   return [question, correctAnswer];// ['4+3', 7]
 };
 
+export const nameDescription = 'What number is missing in the progression?';
+
 export const check = (correctAnswer, answer) => correctAnswer === +answer;

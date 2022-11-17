@@ -7,4 +7,6 @@ export const newQuestionWithAnswer = () => {
   return [question, correctAnswer];
 };
 
+export const nameDescription = 'Answer "yes" if the number is even, otherwise answer "no".';
+
 export const check = (correctAnswer, answer) => correctAnswer === answer;

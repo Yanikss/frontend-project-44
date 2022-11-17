@@ -12,4 +12,6 @@ export const newQuestionWithAnswer = () => {
   return [question, correctAnswer];
 };
 
+export const nameDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+
 export const check = (correctAnswer, answer) => correctAnswer === answer;
