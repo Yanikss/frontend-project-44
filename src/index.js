@@ -9,26 +9,31 @@ import * as gamePrime from './games/brain-prime.js';
 const initGame = (gameName) => {
   if (gameName === 'even') {
     return gameEven;
-  } else if (gameName === 'calc') {
+  }
+  if (gameName === 'calc') {
     return gameCalc;
-  } else if (gameName === 'gcd') {
+  }
+  if (gameName === 'gcd') {
     return gameGcd;
-  } else if (gameName === 'progression') {
+  }
+  if (gameName === 'progression') {
     return gameProgression;
-  } else if (gameName === 'prime') {
+  }
+  if (gameName === 'prime') {
     return gamePrime;
   }
-}
+  return null;
+};
 
 const main = (gameName) => {
   console.log('Welcome to the Brain Games!');
   const userName = makeGreeting();
-  let game = initGame(gameName);
+  const game = initGame(gameName);
   console.log(game.nameDescription);
 
   let countCorrectAnswers = 0;
   for (let i = 0; i < 3; i += 1) {
-    let questionWithCorrectAnswer = game.newQuestionWithAnswer();
+    const questionWithCorrectAnswer = game.newQuestionWithAnswer();
     const question = questionWithCorrectAnswer[0];
     const correctAnswer = questionWithCorrectAnswer[1];
     const answer = readlineSync.question(`Question: ${question}\nYour answer: `);
