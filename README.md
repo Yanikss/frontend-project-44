@@ -4,9 +4,11 @@
 <a href="https://codeclimate.com/github/Yanikss/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/7b4261e975533025d57c/maintainability" /></a>
 
 "Игры разума" - набор из пяти консольных игр.
+
 Для установки выполните следующие команды :
-git clone git@github.com:Yanikss/frontend-project-44.git
-make install
+
+  git clone git@github.com:Yanikss/frontend-project-44.git
+  make install
 
 
 Игра: "Проверка на чётность"
